@@ -6,6 +6,6 @@ body{
     height: 100vh;
 }
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+.p40 {
+    padding: 40px;
+}
