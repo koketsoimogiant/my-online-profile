@@ -15,7 +15,7 @@ import { BioComponent } from './bio/bio.component';
 import { PracticeComponent } from './practice/practice.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './nav/menu/menu.component';
-
+import { PostComponent } from './blog/post/post.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +27,8 @@ import { MenuComponent } from './nav/menu/menu.component';
     BioComponent,
     PracticeComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
