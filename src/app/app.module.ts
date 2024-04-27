@@ -16,6 +16,8 @@ import { PracticeComponent } from './practice/practice.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './nav/menu/menu.component';
 import { PostComponent } from './blog/post/post.component';
+import { SocialComponent } from './social/social.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { PostComponent } from './blog/post/post.component';
     PracticeComponent,
     ContactComponent,
     MenuComponent,
-    PostComponent
+    PostComponent,
+    SocialComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
