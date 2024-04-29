@@ -1,2 +1,21 @@
-<p>practice works!</p>
+<div class="container p-xl-5">
+    <table [border]="1" [cellPadding]="5" [cellSpacing]="1">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email Addres</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td><button class="btn btn-danger" type="button">delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <app-nav></app-nav>

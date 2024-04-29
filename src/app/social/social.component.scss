@@ -1,0 +1,13 @@
+html, body, container, main, p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
