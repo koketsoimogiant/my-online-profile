@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmModalComponent } from '../modals/confirm-modal/confirm-modal.component';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef: MatDialog) { }
 
   ngOnInit(): void {
+  }
+  
+  openDialog(){
+    this.dialogRef.open(ConfirmModalComponent);
   }
 
 }

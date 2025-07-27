@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ArsernalComponent } from './arsernal/arsernal.component';
 import { BioComponent } from './bio/bio.component';
 import { PracticeComponent } from './practice/practice.component';
+import { ConfirmModalComponent } from './modals/confirm-modal/confirm-modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { PracticeComponent } from './practice/practice.component';
     ProjectsComponent,
     ArsernalComponent,
     BioComponent,
-    PracticeComponent
+    PracticeComponent,
+    ConfirmModalComponent
   ],
   imports: [
     BrowserModule,
