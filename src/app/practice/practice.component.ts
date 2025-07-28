@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 interface User {
   id: number;
   name: string;
-  email: string
+  username: string;
+  email: string;
 }
 
 @Component({
