@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-content:String = "";
+content:String = "hello";
 
   constructor() { }
 
@@ -19,4 +19,3 @@ content:String = "";
 function getContent(): String {
   return "Hello World, we are here";
 }
-

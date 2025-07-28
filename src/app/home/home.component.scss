@@ -1,34 +1,33 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
 html, body, .main {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     width: 100vw;
 }
 
 body, .main {
-    background-color: linear-gradient(45deg, navy, darkblue, blue, royalblue, lightblue);
+    background: linear-gradient(45deg, pink, purple, indigo, darkblue, blue, royalblue, skyblue, lightblue, cyan);
+    display: grid;
+    place-items: center;
 }
 
-.main {
-    // background: url(../../assets/colorful_landing.jpg);
-    background: url(../../assets/constelation.jpeg);
-    background-color: blue;
-    background-size: 100% 100%;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 25% 25%;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
 
 .card {
-    padding: 15px;
-    background-color: beige;
-    text-align: center;
+    display: grid;
+    place-items: center;;
+    min-width: 15rem;
+    min-height: 5rem;
+    line-height: 45px;
     opacity: .85;
+    background-color: #242424;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
 }
 
 .card:hover {

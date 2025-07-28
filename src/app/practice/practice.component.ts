@@ -1,6 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
+interface User {
+  id: number;
+  name: string;
+  email: string
+}
+
 @Component({
   selector: 'app-practice',
   templateUrl: './practice.component.html',
@@ -8,20 +14,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PracticeComponent implements OnInit {
 
-  users : any;
-  private message:any;
-  text:String = "";
+  users: User[] = [];
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    let resp = this.http.get("https://jsonplaceholder.typicode.com/users");
-    resp.subscribe((data)=>this.users=data);
-    
-    let msg = this.http.get("http://localhost:8080/hello");
-    msg.subscribe((data)=>this.message=data);
+    this.http.get<User[]>('https://example.com/api/users')
+      .subscribe(data => this.users = data);
 
-    this.text = this.message;
   }
 
 }

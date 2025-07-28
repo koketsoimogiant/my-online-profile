@@ -6,21 +6,21 @@
     text-align: center;
 }
 
-nav {
-    background-color: lightgray;
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between; 
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-}
+// nav {
+//     background-color: lightgray;
+//     display: grid; 
+//     grid-template-columns: repeat(5, 1fr);
+//     justify-content: space-between; 
+//     align-items: center;
+//     position: fixed;
+//     bottom: 0;
+//     width: 100vw;
+// }
 
-.menu-button {
-    padding: 20px;
-    height: 100%;
-}
+// .menu-button {
+//     padding: 20px;
+//     height: 100%;
+// }
 
 .menu-button:hover {
     background-color: #567;
