@@ -12,5 +12,4 @@ export class BioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
